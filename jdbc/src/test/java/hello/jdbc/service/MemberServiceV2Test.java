@@ -40,9 +40,9 @@ class MemberServiceV2Test {
     // 각각의 테스트가 끝날 때 호출
     @AfterEach
     void after() throws SQLException {
-//        memberRepository.delete(MEMBER_A);
-//        memberRepository.delete(MEMBER_B);
-//        memberRepository.delete(MEMBER_EX);
+        memberRepository.delete(MEMBER_A);
+        memberRepository.delete(MEMBER_B);
+        memberRepository.delete(MEMBER_EX);
     }
 
     @Test
