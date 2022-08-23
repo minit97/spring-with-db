@@ -49,7 +49,7 @@ public class MemberServiceV3_2 {
     private void release(Connection con) {
         if (con != null) {
             try {
-                con.setAutoCommit(true);    // 커넥션 풀 고려
+                con.setAutoCommit(true);    // 커넥션 풀  고려
                 con.close();
             } catch (Exception e) {
                 log.info("error", e);
