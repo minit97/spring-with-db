@@ -21,6 +21,7 @@ public class ItemServiceV1 implements ItemService {
         return itemRepository.save(item);
     }
 
+
     @Override
     public void update(Long itemId, ItemUpdateDto updateParam) {
         itemRepository.update(itemId, updateParam);
