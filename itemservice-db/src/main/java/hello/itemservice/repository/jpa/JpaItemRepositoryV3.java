@@ -1,7 +1,6 @@
 package hello.itemservice.repository.jpa;
 
 import com.querydsl.core.BooleanBuilder;
-import com.querydsl.core.types.Predicate;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import hello.itemservice.domain.Item;
@@ -16,7 +15,7 @@ import javax.persistence.EntityManager;
 import java.util.List;
 import java.util.Optional;
 
-import static hello.itemservice.domain.QItem.*;
+import static hello.itemservice.domain.QItem.item;
 
 @Repository
 @Transactional
